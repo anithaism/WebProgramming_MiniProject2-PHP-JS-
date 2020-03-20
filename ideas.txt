@@ -1,0 +1,18 @@
+Ideas
+
+Veg or meat?
+
+Show Calories based on the user input
+
+Subscribe functionality
+
+Kids less than 5 yrs recipes
+
+Display where ingredients are available in stores nearby
+
+Check if the ingredient is with the person else suggest some other thing
+
+Ask users to Post a kid friendly recipe
+
+Get the fav choice of kid and suggest based on that
+

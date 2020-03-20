@@ -1,0 +1,879 @@
+@-webkit-keyframes changeBg
+{
+   0%   {background-image: url("kid.jpg");}
+   25%  {background-image: url("kids2.jpg");}
+   50%  {background-image: url("kids3.jpg");}
+   100% {background-image: url("food.jpg");}
+}
+ 
+.intro
+{
+   height: 100%;
+   width:100%;
+   -webkit-animation: changeBg 10s 1;
+   animation-fill-mode: forwards;
+   background-size: cover;
+    
+}
+
+body {
+   min-width: 500px;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+.set
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.set img
+{
+   width: 10%;
+}
+
+.set div 
+{
+ position: absolute;
+ display: block;
+}
+
+.set div:nth-child(1)
+{
+  left: 0%;
+  animation: animate linear infinite;
+  animation-duration: 10s;
+  animation-delay: -3s;
+}
+.set div:nth-child(2)
+{
+  left: 15%;
+  animation: animate linear infinite;
+  animation-duration: 9s;
+  animation-delay: -5s;
+}
+.set div:nth-child(3)
+{
+  left: 20%;
+  animation: animate linear infinite;
+  animation-duration: 14s;
+}
+.set div:nth-child(4)
+{
+  left: 25%;
+  animation: animate linear infinite;
+  animation-duration: 10s;
+}
+.set div:nth-child(5)
+{
+  left: 30%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(6)
+{
+  left: 45%;
+  animation: animate 12s linear infinite;
+  animation-delay: -5s;
+}
+.set div:nth-child(7)
+{
+  left: 50%;
+  animation: animate 18s linear infinite;
+}
+.set div:nth-child(8)
+{
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.set div:nth-child(9)
+{
+  left: 75%;
+  animation: animate 17s linear infinite;
+  animation-delay: -2s;
+}
+.set div:nth-child(10)
+{
+  left: 80%;
+  animation: animate 18s linear infinite;
+  animation-delay: -5s;
+}
+.set div:nth-child(11)
+{
+  left: 90%;
+  animation: animate 12s linear infinite;
+}
+.set div:nth-child(12)
+{
+  left: 100%;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(0deg);
+  }
+  15%
+  { 
+    top: -10%;
+    transform: translate(0,0px) rotate(45deg);
+  }
+  20%
+  {
+    
+    top: -10%;
+    transform: translate(0,0px) rotate(45deg);
+  } 
+  25%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(90deg);
+  } 
+
+  30%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(45deg);
+  } 
+
+  45%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(90deg);
+  } 
+  50%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(90deg);
+  } 
+  60%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(90deg);
+  } 
+  75%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(90deg);
+  } 
+  80%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(90deg);
+  } 
+  90%
+  {
+    top: -5%;
+    transform: translate(0,0px) rotate(0deg);
+  } 
+  
+  100%
+  {
+    top: 110%;
+    transform: translateX(100px) rotate(0deg);   
+  }
+
+}
+
+.set2 {
+
+ transform: scale(2) rotateY(180deg);
+ filter: blur(2px);
+}
+
+.set3 {
+
+ transform: scale(1.5) rotateY(90deg);
+ }
+
+.heading {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  color: white;
+  font-size: 60px;
+  font-family: Apple Chancery;
+  font-weight: italic;
+
+}
+
+.rightlogin a {
+  position: absolute;
+  right: 0px;
+  transition: 0.3s; 
+  padding: 30px;
+  width: 100px; 
+  text-decoration: none;
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 3px 3px 0;
+}
+
+.rightlogin a:hover {
+  color: red;
+}
+
+
+#mySidenav a {
+  position: absolute;
+  left: 0px; 
+  transition: 0.3s; 
+  padding: 30px;
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 3px 3px 0;
+}
+
+.link {
+  position: absolute;
+  bottom: 5%;
+  right: 80%;
+  color: white;
+  font-size: 20px;
+}
+
+#mySidenav a:hover {
+  left: 0;
+  color: red;
+}
+
+
+#home {
+  top: 210px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#about {
+  top: 300px;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+#index {
+  top: 390px;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+#categories {
+  top: 502px;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+#postquery {
+  top: 615px;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.search {
+  position: absolute;
+  bottom: 10;
+  right: 80;
+}
+
+
+.search input[type="text"] {
+  height: 30px;
+  width: 300px;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-size: 18px; 
+}
+
+input[type=text]:focus { 
+     width: 70%; 
+   } 
+ 
+  #list{ 
+    font-size:  1.5em; 
+    margin-left: 90px;
+    visibility: hidden; 
+   } 
+ 
+.recipe{ 
+   display: list-item;     
+  }  
+
+.loginpage {
+  height: 100%;
+  width: 100%; 
+  background-image: url("loginbg3.jpg");
+  background-size: cover;
+}
+
+.transbox {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  height: 45%;
+  width: 45%;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+.transbox p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  font-family: Helvetica;
+  font-style: italic;
+}
+
+.transbox .formLayout
+{
+   width:90%;
+   margin:0 auto;
+   text-align: left;
+   padding:3%;
+   border-radius: 6px; 
+   border: 1px solid #CCCCCC; 
+}
+
+.transbox .formGroup
+{
+   margin:10px 0;
+   font-size: 20px;  
+
+}
+
+.transbox .formGroup1
+{
+   margin:20px 180px;
+   font-size: 20px;
+   width: 80%;
+   padding: 10px;
+   font-weight: bold;
+
+}
+
+.formLayout button
+{
+   width: 20%;
+   height: 10%;
+   padding: 5px;
+   font-size: 15px;
+}
+
+.formLayout label
+{
+   width: 150px;
+   padding:1%;
+   display: inline-block;
+   vertical-align: top;
+   clear:left;
+  
+}
+
+.formLayout input
+{
+   width:50%;
+   border: 1px solid #CCCCCC; 
+   border-radius: 4px;
+   color: #555555;
+   font-size:large;
+}
+
+.formLayout option
+{
+   padding:2px 6px;
+}
+
+.formLayout submit, .formLayout input[type=submit]
+{
+   width:50%;
+   height:auto;
+   background: linear-gradient(#ffffff, #e6e6e6);
+}
+
+.formLayout input[type=submit]:hover{
+   background:#e6e6e6;
+}
+
+.errormsg, .alert {
+   color:red; 
+   text-align: center;
+}
+
+.aboutpage {
+  height: 100%;
+  width: 100%;
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+
+.aboutpage .untilend {
+  font-size: 18px;
+  color: white;
+}
+
+.aboutpage .abouthead {
+   position: absolute;
+   color: white;
+   left: 20%;
+   font-size: 40px;
+   padding: 2%;
+   font-family: Helvetica;
+   font-style: italic;
+}
+
+.aboutpage .logout {
+   position: absolute;
+   top: 15%;
+   left: 85%;
+}
+
+
+.aboutpage .logout .button {
+  font-size: 12px;
+}
+
+.aboutpage .aboutpara {
+   position: absolute;
+   width: 400px;
+   height: 500px;
+   top: 20%;
+   left: 15%; 
+   color: white;
+   font-size: 23px;
+   border: 5px solid white;
+   font-family: Helvetica;
+   padding: 2%;
+}
+
+.recipeindex {
+  height: 100%;
+  width: 100%;
+  background-image: url("bg3.jpg");
+  background-size: cover;
+}
+
+.recipeindex .recipehead {
+  position: absolute;
+   color: white;
+   left: 40%;
+   font-size: 30px;
+   padding: 2%;
+   font-family: Helvetica;
+   font-style: italic;
+}
+
+
+.recipeindex .recipehead img {
+ width: 5%;
+}
+
+.container .row1c1 img {
+ position: absolute;
+ top: 25%;
+ left: 25%;
+ width: 15%;
+ height: 15%;
+}
+
+.container .row1c1 p {
+ position: absolute;
+ top: 40%;
+ left: 27%;
+ color: white;
+ font-size: 15px;
+ font-family: Helvetica;
+}
+
+.container .row1c2 img {
+ position: absolute;
+ top: 25%;
+ left: 45%;
+ width: 15%;
+ height: 15%;
+}
+
+.container .row1c2 p {
+ position: absolute;
+ top: 40%;
+ left: 47%;
+ color: white;
+ font-size: 15px;
+ font-family: Helvetica;
+}
+
+.container .row1c3 img {
+ position: absolute;
+ top: 25%;
+ left: 65%;
+ width: 15%;
+ height: 15%;
+}
+
+.container .row1c3 p {
+ position: absolute;
+ top: 40%;
+ left: 68%;
+ color: white;
+ font-size: 15px;
+ font-family: Helvetica;
+}
+
+.hovertextr1c1
+{
+ position: absolute;
+ top: 25%;
+ left: 25%;
+ width: 15%;
+ height: 15%;
+ opacity: 0; 
+}
+
+.row1c1:hover .hovertextr1c1
+    {
+      opacity:1;
+      text-align:justify;
+      color:#000000;
+      font-size:20px;
+      font-weight:700;
+      font-family:"Times New Roman", Times, serif;
+      padding:30px;
+    }
+
+.hovertextr1c2
+{
+ position: absolute;
+ top: 25%;
+ left: 45%;
+ width: 15%;
+ height: 15%;
+ opacity: 0; 
+}
+
+.row1c2:hover .hovertextr1c2
+    {
+      opacity:1;
+      text-align:justify;
+      color:#000000;
+      font-size:20px;
+      font-weight:700;
+      font-family:"Times New Roman", Times, serif;
+      padding:30px;
+    }
+
+.hovertextr1c3
+{
+ position: absolute;
+ top: 25%;
+ left: 65%;
+ width: 15%;
+ height: 15%;
+ opacity: 0; 
+}
+
+.row1c3:hover .hovertextr1c3
+    {
+      opacity:1;
+      text-align:justify;
+      color:#000000;
+      font-size:20px;
+      font-weight:700;
+      font-family:"Times New Roman", Times, serif;
+      padding:30px;
+    }
+
+.pancakes {
+  height: 100%;
+  width: 100%;
+  background-image: url("bg5.jpg");
+  background-size: cover;
+}
+
+.pancakeshead {
+   position: absolute;
+   color: white;
+   left: 35%;
+   font-size: 40px;
+   padding: 2%;
+   font-family: Helvetica;
+   font-style: italic;
+}
+
+.top img{
+   position: absolute;
+   top: 15%;
+   left: 40%;
+   height: 18%;
+   width: 40%;
+}
+
+.almond {
+   position: absolute;
+   top: 32%;
+   left: 40%;
+   color: white;
+   font-size: 20px;
+}
+
+.wheat {
+   position: absolute;
+   top: 42%;
+   left: 40%;
+   color: white;
+   font-size: 20px;
+}
+
+.allpurpose {
+   position: absolute;
+   top: 52%;
+   left: 40%;
+   color: white;
+   font-size: 20px;
+}
+
+
+.toppings {
+   position: absolute;
+   top: 62%;
+   left: 40%;
+   color: white;
+   font-size: 20px;
+}
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.left {
+  left: 0;
+
+}
+
+.right {
+  right: 0;
+
+}
+
+.servings {
+   position: absolute;
+   top: 72%;
+   left: 40%;
+   color: white;
+   font-size: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: brown;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.button1 {
+   position: absolute;
+   top: 90%;
+   left: 40%;
+}
+
+.button2 {
+   position: absolute;
+   top: 90%;
+   left: 75%;
+}
+
+.button{
+  background-color: #641E16;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.categories {
+  height: 100%;
+  weight: 100%;
+  background-image: url("bg4.jpg");
+  background-size: cover;  
+}
+
+.categorieshead {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  right: 30%;
+  font-size: 40px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  width: 70%;
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #b95929;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+ left: 20%;
+  top: 20%;
+  width: 25%;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.forum {
+  height: 100%;
+  weight: 100%;
+  background-image: url("bg2.png");
+  background-size: cover;  
+}
+
+.discussionhead {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 40%;
+  font-size: 40px;
+}
+
+.formtopost {
+   position: absolute;
+   top: 20%;
+   left: 30%;
+   border-radius: 10px;
+   background-color: transparent;
+   padding: 20px;
+   width: 40%;
+   font-size: 20px;
+   color: white;
+}
+
+.formtopost input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formtopost textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formtopost input[type=submit] {
+  width: 100%;
+  background-color: #641E16;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.formtopost input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.splitright {
+  position: absolute;
+  top: 12%;
+  left: 60%;
+  color: white;
+}
+
+.splitdown {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  color: white;
+}
+
+
+
+
